@@ -1,3 +1,36 @@
+/* manrope-regular - latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manrope-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/manrope-v11-latin-regular.woff2") format("woff2"), url("../fonts/manrope-v11-latin-regular.woff") format("woff"), url("../fonts/manrope-v11-latin-regular.ttf") format("truetype"), url("../fonts/manrope-v11-latin-regular.svg#Manrope") format("svg");
+  /* Legacy iOS */
+}
+
+/* manrope-500 - latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/manrope-v11-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/manrope-v11-latin-500.woff2") format("woff2"), url("../fonts/manrope-v11-latin-500.woff") format("woff"), url("../fonts/manrope-v11-latin-500.ttf") format("truetype"), url("../fonts/manrope-v11-latin-500.svg#Manrope") format("svg");
+  /* Legacy iOS */
+}
+
+/* manrope-700 - latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/manrope-v11-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/manrope-v11-latin-700.woff2") format("woff2"), url("../fonts/manrope-v11-latin-700.woff") format("woff"), url("../fonts/manrope-v11-latin-700.ttf") format("truetype"), url("../fonts/manrope-v11-latin-700.svg#Manrope") format("svg");
+  /* Legacy iOS */
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -356,7 +389,7 @@ html {
 }
 
 body {
-  font-family: 'Arial', 'sans-serif';
+  font-family: 'Manrope', 'Arial', 'sans-serif';
   margin: 0;
   padding: 0;
 }
@@ -365,6 +398,15 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -379,7 +421,227 @@ img {
 }
 
 .container {
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  width: 100%;
+  max-width: 1240px;
+  padding: 65px 100px 235px 100px;
+  background-image: url(../images/bc-img.png);
+  background-repeat: no-repeat;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 76px;
+  border-bottom: 1px solid #fff;
+}
+
+.header-vector {
+  width: 100%;
+  max-width: 1240px;
+  max-height: 2px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #fff;
+}
+
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  color: #fff;
+  opacity: 0.3;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.list__link:hover {
+  opacity: 1;
+}
+
+.header__span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 18px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #fff;
+  border-radius: 75px;
+}
+
+.form {
+  width: 100%;
+  max-width: 711px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+.label {
+  color: #fff;
+  display: block;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+.input {
+  display: block;
+  border-radius: 25px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 50px;
+  color: #fff;
+}
+
+.input-left {
+  width: 100%;
+  max-width: 393px;
+  color: #fff;
+  display: block;
+  margin-left: 10px;
+  margin-top: 50px;
+  display: block;
+  border-radius: 25px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  margin-right: 30px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.input-right {
+  width: 100%;
+  max-width: 288px;
+  color: #fff;
+  display: block;
+  margin-left: 10px;
+  margin-top: 50px;
+  display: block;
+  border-radius: 25px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.input-middle {
+  width: 100%;
+  max-width: 338px;
+  color: #fff;
+  display: block;
+  margin-left: 10px;
+  margin-top: 50px;
+  display: block;
+  border-radius: 25px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.select-right {
+  width: 100%;
+  max-width: 393px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  margin-right: 30px;
+  border-radius: 25px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.select-left {
+  width: 100%;
+  max-width: 288px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  margin-right: 30px;
+  border-radius: 25px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.label--mes {
+  color: #fff;
+  display: block;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.input--mes {
+  display: block;
+  border-radius: 25px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 711px;
+  height: 168px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 200px;
+  color: #fff;
+}
+
+.btn {
+  display: block;
+  margin-left: 179px;
 }
 /*# sourceMappingURL=main.css.map */
